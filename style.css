@@ -1,0 +1,55 @@
+body {
+    padding: 100px 0 10px 600px;
+    margin: 0px;
+    height: 100%;
+    background-color: rgb(14, 14, 14);
+}
+
+.container {
+    width: 340px;
+    height: 266px;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: Box; 
+    animation-duration: 5s;
+    position: absolute;
+    animation-fill-mode: forwards;
+    
+}
+
+ 
+@keyframes Box{
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: rgba(255, 0, 0, 0.307);
+        transform:translateX(230px);
+    }
+
+
+    50% {
+        background-color: black;
+        transform:translateX(230px) translateY(170px);
+    }
+
+    75% {
+        background-color: chocolate;
+        transform: translateY(170px) translateX(0px);
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+
